@@ -1,7 +1,16 @@
-# .github/workflows/use-terraform.yml
+# .github/workflows/terraform.yml
 name: Use Reusable Terraform Workflow
 
 on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'    
+        required: true             
+        default: 'warning'         
+      environment:
+        description: 'Environment to deploy to'
+        required: true  
   push:
     branches:
       - main
