@@ -11,7 +11,7 @@ on:
 
 jobs:
   call-terraform-plan:
-    uses: adam-welch/pipeline-templates/.github/workflows/terraform_plan.yml
+    uses: adam-welch/pipeline-templates/.github/workflows/terraform_plan.yml@main
     with:
       terraform_version: "1.3.0" 
 
